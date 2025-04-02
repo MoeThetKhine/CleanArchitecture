@@ -1,6 +1,5 @@
-﻿namespace DotNet8.Clean.Utlis
+﻿namespace DotNet8.Clean.Utlis;
+
+internal class Result
 {
-	internal class Result
-	{
-	}
 }
