@@ -1,7 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-
-namespace DotNet8.Clean.Domain.Features.Blog;
+﻿namespace DotNet8.Clean.Domain.Features.Blog;
 
 #region Tbl_Blog
 
