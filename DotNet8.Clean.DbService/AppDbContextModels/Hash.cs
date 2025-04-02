@@ -1,5 +1,7 @@
 ﻿namespace DotNet8.Clean.DbService.AppDbContextModels;
 
+#region Hash
+
 public partial class Hash
 {
     public string Key { get; set; } = null!;
@@ -10,3 +12,5 @@ public partial class Hash
 
     public DateTime? ExpireAt { get; set; }
 }
+
+#endregion
