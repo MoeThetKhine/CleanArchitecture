@@ -1,6 +1,5 @@
-﻿namespace DotNet8.Clean.Application.Extensions
+﻿namespace DotNet8.Clean.Application.Extensions;
+
+public class Extension
 {
-	public class Extension
-	{
-	}
 }
