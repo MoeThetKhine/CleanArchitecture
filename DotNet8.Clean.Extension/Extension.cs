@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DotNet8.Clean.Extension
+﻿namespace DotNet8.Clean.Extension
 {
 	internal class Extension
 	{
