@@ -1,6 +1,5 @@
-﻿namespace DotNet8.Clean.Application.Features.Blog.PatchBlog
+﻿namespace DotNet8.Clean.Application.Features.Blog.PatchBlog;
+
+internal class PatchBlogCommand
 {
-	internal class PatchBlogCommand
-	{
-	}
 }
