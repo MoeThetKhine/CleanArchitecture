@@ -173,6 +173,8 @@ public partial class AppDbContext : DbContext
 
 		#endregion
 
+		#region Schema
+
 		modelBuilder.Entity<Schema>(entity =>
         {
             entity.HasKey(e => e.Version).HasName("PK_HangFire_Schema");
@@ -182,7 +184,9 @@ public partial class AppDbContext : DbContext
             entity.Property(e => e.Version).ValueGeneratedNever();
         });
 
-        modelBuilder.Entity<Server>(entity =>
+		#endregion
+
+		modelBuilder.Entity<Server>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK_HangFire_Server");
 
