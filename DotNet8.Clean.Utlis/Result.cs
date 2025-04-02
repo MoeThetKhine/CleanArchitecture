@@ -1,6 +1,4 @@
-﻿using DotNet8.Clean.Utlis.Enums;
-
-namespace DotNet8.Clean.Utlis;
+﻿namespace DotNet8.Clean.Utlis;
 
 #region Result
 
