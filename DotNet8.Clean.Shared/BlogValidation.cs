@@ -1,6 +1,5 @@
-﻿namespace DotNet8.Clean.Shared
+﻿namespace DotNet8.Clean.Shared;
+
+internal class BlogValidation
 {
-	internal class BlogValidation
-	{
-	}
 }
