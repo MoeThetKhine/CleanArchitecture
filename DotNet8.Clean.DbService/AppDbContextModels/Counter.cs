@@ -1,5 +1,7 @@
 ﻿namespace DotNet8.Clean.DbService.AppDbContextModels;
 
+#region Counter
+
 public partial class Counter
 {
     public string Key { get; set; } = null!;
@@ -10,3 +12,5 @@ public partial class Counter
 
     public long Id { get; set; }
 }
+
+#endregion
