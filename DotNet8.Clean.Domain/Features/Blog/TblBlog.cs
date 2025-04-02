@@ -3,6 +3,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DotNet8.Clean.Domain.Features.Blog;
 
+#region Tbl_Blog
+
 [Table("Tbl_Blog")]
 public class Tbl_Blog
 {
@@ -17,3 +19,5 @@ public class Tbl_Blog
 
 	public bool DeleteFlag { get; set; }
 }
+
+#endregion
