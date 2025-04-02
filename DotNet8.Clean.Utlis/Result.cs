@@ -2,6 +2,8 @@
 
 namespace DotNet8.Clean.Utlis;
 
+#region Result
+
 public class Result<T>
 {
 	public T Data { get; set; }
@@ -123,3 +125,5 @@ public class Result<T>
 	#endregion
 
 }
+
+#endregion
