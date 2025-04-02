@@ -1,6 +1,4 @@
-﻿using DotNet8.Clean.Domain.Features.Blog;
-using Microsoft.EntityFrameworkCore;
-
+﻿
 namespace DotNet8.Clean.Infrastructure.Features.Blog;
 
 #region BlogDbContext
