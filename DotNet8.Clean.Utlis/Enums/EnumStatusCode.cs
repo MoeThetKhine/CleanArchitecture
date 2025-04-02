@@ -1,6 +1,5 @@
-﻿namespace DotNet8.Clean.Utlis.Enums
+﻿namespace DotNet8.Clean.Utlis.Enums;
+
+public class EnumStatusCode
 {
-	public class EnumStatusCode
-	{
-	}
 }
