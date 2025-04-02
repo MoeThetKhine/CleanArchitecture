@@ -202,6 +202,8 @@ public partial class AppDbContext : DbContext
 
 		#endregion
 
+		#region Set
+
 		modelBuilder.Entity<Set>(entity =>
         {
             entity.HasKey(e => new { e.Key, e.Value }).HasName("PK_HangFire_Set");
@@ -217,7 +219,9 @@ public partial class AppDbContext : DbContext
             entity.Property(e => e.ExpireAt).HasColumnType("datetime");
         });
 
-        modelBuilder.Entity<State>(entity =>
+		#endregion
+
+		modelBuilder.Entity<State>(entity =>
         {
             entity.HasKey(e => new { e.JobId, e.Id }).HasName("PK_HangFire_State");
 
