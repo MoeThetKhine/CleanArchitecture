@@ -1,5 +1,5 @@
 ﻿namespace DotNet8.Clean.Application.Features.Blog.PatchBlog;
 
-internal class PatchBlogCommandHandler
+public class PatchBlogCommandHandler
 {
 }
