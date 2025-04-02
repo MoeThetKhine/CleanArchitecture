@@ -1,7 +1,4 @@
-﻿using DotNet8.Clean.DbService.AppDbContextModels;
-using DotNet8.Clean.DTO.Features.Blog;
-
-namespace DotNet8.Clean.Extension
+﻿namespace DotNet8.Clean.Extension
 {
 	public static class Extension
 	{
