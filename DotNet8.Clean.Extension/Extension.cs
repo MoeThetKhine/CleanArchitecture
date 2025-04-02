@@ -5,6 +5,8 @@ namespace DotNet8.Clean.Extension
 {
 	public static class Extension
 	{
+		#region ToModel
+
 		public static BlogModel ToModel(this TblBlog dataModel)
 		{
 			return new BlogModel
@@ -16,6 +18,8 @@ namespace DotNet8.Clean.Extension
 				DeleteFlag = dataModel.DeleteFlag
 			};
 		}
+
+		#endregion
 
 		public static TblBlog ToEntity(this BlogRequestModel model)
 		{
