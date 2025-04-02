@@ -1,5 +1,7 @@
 ﻿namespace DotNet8.Clean.DbService.AppDbContextModels;
 
+#region JobQueue
+
 public partial class JobQueue
 {
     public long Id { get; set; }
@@ -10,3 +12,5 @@ public partial class JobQueue
 
     public DateTime? FetchedAt { get; set; }
 }
+
+#endregion
