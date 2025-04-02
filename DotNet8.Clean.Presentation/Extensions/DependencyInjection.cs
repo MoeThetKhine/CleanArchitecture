@@ -1,6 +1,5 @@
-﻿namespace DotNet8.Clean.Presentation.Extensions
+﻿namespace DotNet8.Clean.Presentation.Extensions;
+
+public class DependencyInjection
 {
-	public class DependencyInjection
-	{
-	}
 }
