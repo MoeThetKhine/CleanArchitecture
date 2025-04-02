@@ -52,6 +52,8 @@ public class Result<T>
 
 	#endregion
 
+	#region UpdateSuccess
+
 	public static Result<T> UpdateSuccess(string message = "Update Successful.", EnumStatusCode statusCode = EnumStatusCode.Success)
 	{
 		return new Result<T>
@@ -61,6 +63,8 @@ public class Result<T>
 			StatusCode = statusCode
 		};
 	}
+
+	#endregion
 
 	public static Result<T> DeleteSuccess(string message = "Delete Successful.", EnumStatusCode statusCode = EnumStatusCode.Success)
 	{
