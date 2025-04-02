@@ -21,6 +21,8 @@ namespace DotNet8.Clean.Extension
 
 		#endregion
 
+		#region ToEntity
+
 		public static TblBlog ToEntity(this BlogRequestModel model)
 		{
 			return new TblBlog
@@ -30,5 +32,7 @@ namespace DotNet8.Clean.Extension
 				BlogContent = model.BlogContent
 			};
 		}
+
+		#endregion
 	}
 }
