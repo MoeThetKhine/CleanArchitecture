@@ -25,10 +25,14 @@ public static class DependencyInjection
 
 	#endregion
 
+	#region IServiceCollection
+
 	private static IServiceCollection AddRepositoryService(this IServiceCollection services)
 	{
 		return services.AddScoped<IBlogRepository, BlogRepository>();
 	}
+
+	#endregion
 
 	public static IServiceCollection AddDependencyInjection(this IServiceCollection services, WebApplicationBuilder builder)
 	{
