@@ -1,4 +1,5 @@
-﻿using DotNet8.Clean.Infrastructure.Features.Blog;
+﻿using DotNet8.Clean.Domain.Features.Blog;
+using DotNet8.Clean.Infrastructure.Features.Blog;
 using Microsoft.EntityFrameworkCore;
 
 namespace DotNet8.Clean.Presentation.Extensions;
@@ -18,5 +19,10 @@ public static class DependencyInjection
 		);
 
 		return services;
+	}
+
+	private static IServiceCollection AddRepositoryService(this IServiceCollection services)
+	{
+		return services.AddScoped<IBlogRepository, BlogRepository>();
 	}
 }
