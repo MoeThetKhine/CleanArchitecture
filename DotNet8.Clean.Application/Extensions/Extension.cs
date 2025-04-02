@@ -1,5 +1,12 @@
-﻿namespace DotNet8.Clean.Application.Extensions;
+﻿using Microsoft.Extensions.DependencyInjection;
 
-public class Extension
+namespace DotNet8.Clean.Application.Extensions;
+
+public static class Extension
 {
+	public static IServiceCollection AddMediatRService(this IServiceCollection services)
+	{
+		return services.AddMediatR(cf =>
+		cf.RegisterServicesFromAssembly(typeof(Extension).Assembly));
+	}
 }
