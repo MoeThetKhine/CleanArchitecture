@@ -141,6 +141,8 @@ public partial class AppDbContext : DbContext
 
 		#endregion
 
+		#region JobQueue
+
 		modelBuilder.Entity<JobQueue>(entity =>
         {
             entity.HasKey(e => new { e.Queue, e.Id }).HasName("PK_HangFire_JobQueue");
@@ -152,7 +154,9 @@ public partial class AppDbContext : DbContext
             entity.Property(e => e.FetchedAt).HasColumnType("datetime");
         });
 
-        modelBuilder.Entity<List>(entity =>
+		#endregion
+
+		modelBuilder.Entity<List>(entity =>
         {
             entity.HasKey(e => new { e.Key, e.Id }).HasName("PK_HangFire_List");
 
