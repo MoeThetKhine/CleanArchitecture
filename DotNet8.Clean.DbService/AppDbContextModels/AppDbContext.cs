@@ -124,6 +124,8 @@ public partial class AppDbContext : DbContext
 
 		#endregion
 
+		#region JobParameter
+
 		modelBuilder.Entity<JobParameter>(entity =>
         {
             entity.HasKey(e => new { e.JobId, e.Name }).HasName("PK_HangFire_JobParameter");
@@ -137,7 +139,9 @@ public partial class AppDbContext : DbContext
                 .HasConstraintName("FK_HangFire_JobParameter_Job");
         });
 
-        modelBuilder.Entity<JobQueue>(entity =>
+		#endregion
+
+		modelBuilder.Entity<JobQueue>(entity =>
         {
             entity.HasKey(e => new { e.Queue, e.Id }).HasName("PK_HangFire_JobQueue");
 
