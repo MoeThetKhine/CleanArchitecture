@@ -1,5 +1,7 @@
 ﻿namespace DotNet8.Clean.DbService.AppDbContextModels;
 
+#region TblBlog
+
 public partial class TblBlog
 {
     public long BlogId { get; set; }
@@ -12,3 +14,5 @@ public partial class TblBlog
 
     public bool? DeleteFlag { get; set; }
 }
+
+#endregion
