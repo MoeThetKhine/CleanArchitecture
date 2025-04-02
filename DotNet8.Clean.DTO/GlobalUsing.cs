@@ -1,1 +1,1 @@
-﻿
+﻿global using DotNet8.Clean.DTO.Features.PageSetting;
