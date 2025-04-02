@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DotNet8.Clean.DTO\DotNet8.Clean.DTO.csproj" />
+    <ProjectReference Include="..\DotNet8.Clean.Utlis\DotNet8.Clean.Utlis.csproj" />
+  </ItemGroup>
+
 </Project>
