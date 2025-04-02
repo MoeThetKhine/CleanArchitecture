@@ -1,5 +1,5 @@
 ﻿namespace DotNet8.Clean.DTO.Features.Blog;
 
-internal class BlogListModel
+public class BlogListModel
 {
 }
