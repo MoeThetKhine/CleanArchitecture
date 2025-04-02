@@ -25,7 +25,7 @@ public static class DependencyInjection
 
 	#endregion
 
-	#region IServiceCollection
+	#region AddRepositoryService
 
 	private static IServiceCollection AddRepositoryService(this IServiceCollection services)
 	{
