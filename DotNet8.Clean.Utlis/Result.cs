@@ -94,6 +94,8 @@ public class Result<T>
 
 	#endregion
 
+	#region Failure
+
 	public static Result<T> Failure(Exception ex)
 	{
 		return new Result<T>
@@ -103,6 +105,8 @@ public class Result<T>
 			StatusCode = EnumStatusCode.InternalServerError
 		};
 	}
+
+	#endregion
 
 	public static Result<T> NotFound(string message = "No Data Found.", EnumStatusCode statusCode = EnumStatusCode.NotFound)
 	{
