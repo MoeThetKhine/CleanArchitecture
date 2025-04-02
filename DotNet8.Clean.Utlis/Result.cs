@@ -66,6 +66,8 @@ public class Result<T>
 
 	#endregion
 
+	#region DeleteSuccess
+
 	public static Result<T> DeleteSuccess(string message = "Delete Successful.", EnumStatusCode statusCode = EnumStatusCode.Success)
 	{
 		return new Result<T>
@@ -75,6 +77,8 @@ public class Result<T>
 			StatusCode = statusCode
 		};
 	}
+
+	#endregion
 
 	public static Result<T> Fail(string message = "Failed.", EnumStatusCode statusCode = EnumStatusCode.BadRequest)
 	{
