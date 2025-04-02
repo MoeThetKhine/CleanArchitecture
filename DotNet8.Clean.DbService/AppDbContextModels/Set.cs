@@ -1,5 +1,7 @@
 ﻿namespace DotNet8.Clean.DbService.AppDbContextModels;
 
+#region Set
+
 public partial class Set
 {
     public string Key { get; set; } = null!;
@@ -10,3 +12,5 @@ public partial class Set
 
     public DateTime? ExpireAt { get; set; }
 }
+
+#endregion
