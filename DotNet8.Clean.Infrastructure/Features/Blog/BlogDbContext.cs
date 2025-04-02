@@ -1,5 +1,4 @@
-﻿
-namespace DotNet8.Clean.Infrastructure.Features.Blog;
+﻿namespace DotNet8.Clean.Infrastructure.Features.Blog;
 
 #region BlogDbContext
 
