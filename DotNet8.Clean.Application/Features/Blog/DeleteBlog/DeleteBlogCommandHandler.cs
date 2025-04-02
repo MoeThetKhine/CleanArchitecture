@@ -1,6 +1,5 @@
-﻿namespace DotNet8.Clean.Application.Features.Blog.DeleteBlog
+﻿namespace DotNet8.Clean.Application.Features.Blog.DeleteBlog;
+
+internal class DeleteBlogCommandHandler
 {
-	internal class DeleteBlogCommandHandler
-	{
-	}
 }
