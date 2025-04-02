@@ -16,5 +16,15 @@ namespace DotNet8.Clean.Extension
 				DeleteFlag = dataModel.DeleteFlag
 			};
 		}
+
+		public static TblBlog ToEntity(this BlogRequestModel model)
+		{
+			return new TblBlog
+			{
+				BlogTitle = model.BlogTitle,
+				BlogAuthor = model.BlogAuthor,
+				BlogContent = model.BlogContent
+			};
+		}
 	}
 }
