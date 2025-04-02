@@ -10,4 +10,11 @@
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\DotNet8.Clean.Application\DotNet8.Clean.Application.csproj" />
+	  <ProjectReference Include="..\DotNet8.Clean.Domain\DotNet8.Clean.Domain.csproj" />
+	  <ProjectReference Include="..\DotNet8.Clean.Extension\DotNet8.Clean.Extension.csproj" />
+	  <ProjectReference Include="..\DotNet8.Clean.Shared\DotNet8.Clean.Shared.csproj" />
+	</ItemGroup>
+
 </Project>
