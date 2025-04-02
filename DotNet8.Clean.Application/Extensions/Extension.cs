@@ -1,6 +1,6 @@
 ﻿namespace DotNet8.Clean.Application.Extensions
 {
-	internal class Extension
+	public class Extension
 	{
 	}
 }
