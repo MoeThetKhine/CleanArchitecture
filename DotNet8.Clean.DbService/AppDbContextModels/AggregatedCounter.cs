@@ -1,5 +1,7 @@
 ﻿namespace DotNet8.Clean.DbService.AppDbContextModels;
 
+#region AggregatedCounter
+
 public partial class AggregatedCounter
 {
     public string Key { get; set; } = null!;
@@ -8,3 +10,5 @@ public partial class AggregatedCounter
 
     public DateTime? ExpireAt { get; set; }
 }
+
+#endregion
