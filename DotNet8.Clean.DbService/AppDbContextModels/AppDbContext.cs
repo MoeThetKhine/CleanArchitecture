@@ -186,6 +186,8 @@ public partial class AppDbContext : DbContext
 
 		#endregion
 
+		#region Server
+
 		modelBuilder.Entity<Server>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK_HangFire_Server");
@@ -198,7 +200,9 @@ public partial class AppDbContext : DbContext
             entity.Property(e => e.LastHeartbeat).HasColumnType("datetime");
         });
 
-        modelBuilder.Entity<Set>(entity =>
+		#endregion
+
+		modelBuilder.Entity<Set>(entity =>
         {
             entity.HasKey(e => new { e.Key, e.Value }).HasName("PK_HangFire_Set");
 
