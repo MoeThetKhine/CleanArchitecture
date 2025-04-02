@@ -1,6 +1,5 @@
-﻿namespace DotNet8.Clean.Shared
+﻿namespace DotNet8.Clean.Shared;
+
+public class DevCode
 {
-	public class DevCode
-	{
-	}
 }
