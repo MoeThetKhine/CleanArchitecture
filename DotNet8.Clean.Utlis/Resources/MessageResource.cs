@@ -1,6 +1,6 @@
 ﻿namespace DotNet8.Clean.Utlis.Resources
 {
-	internal class MessageResource
+	public class MessageResource
 	{
 	}
 }
