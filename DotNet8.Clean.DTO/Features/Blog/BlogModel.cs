@@ -1,6 +1,6 @@
 ﻿namespace DotNet8.Clean.DTO.Features.Blog
 {
-	internal class BlogModel
+	public class BlogModel
 	{
 	}
 }
