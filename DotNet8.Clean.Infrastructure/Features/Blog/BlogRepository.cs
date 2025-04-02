@@ -1,6 +1,5 @@
-﻿namespace DotNet8.Clean.Infrastructure.Features.Blog
+﻿namespace DotNet8.Clean.Infrastructure.Features.Blog;
+
+internal class BlogRepository
 {
-	internal class BlogRepository
-	{
-	}
 }
