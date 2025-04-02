@@ -1,5 +1,7 @@
 ﻿namespace DotNet8.Clean.DbService.AppDbContextModels;
 
+#region Server
+
 public partial class Server
 {
     public string Id { get; set; } = null!;
@@ -8,3 +10,5 @@ public partial class Server
 
     public DateTime LastHeartbeat { get; set; }
 }
+
+#endregion
