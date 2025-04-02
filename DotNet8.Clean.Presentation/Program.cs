@@ -1,4 +1,5 @@
 using DotNet8.Clean.Presentation.Extensions;
+using DotNet8.Clean.Application.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
