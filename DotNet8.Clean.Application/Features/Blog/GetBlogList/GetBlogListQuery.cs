@@ -1,6 +1,5 @@
-﻿namespace DotNet8.Clean.Application.Features.Blog.GetBlogList
+﻿namespace DotNet8.Clean.Application.Features.Blog.GetBlogList;
+
+internal class GetBlogListQuery
 {
-	internal class GetBlogListQuery
-	{
-	}
 }
