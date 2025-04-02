@@ -1,5 +1,7 @@
 ﻿namespace DotNet8.Clean.DbService.AppDbContextModels;
 
+#region State
+
 public partial class State
 {
     public long Id { get; set; }
@@ -16,3 +18,5 @@ public partial class State
 
     public virtual Job Job { get; set; } = null!;
 }
+
+#endregion
