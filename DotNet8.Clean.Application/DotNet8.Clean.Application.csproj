@@ -10,4 +10,9 @@
 		<PackageReference Include="MediatR" Version="12.4.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\DotNet8.Clean.Domain\DotNet8.Clean.Domain.csproj" />
+	  <ProjectReference Include="..\DotNet8.Clean.Shared\DotNet8.Clean.Shared.csproj" />
+	</ItemGroup>
+
 </Project>
