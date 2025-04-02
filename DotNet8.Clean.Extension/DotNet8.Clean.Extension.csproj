@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DotNet8.Clean.DbService\DotNet8.Clean.DbService.csproj" />
+    <ProjectReference Include="..\DotNet8.Clean.DTO\DotNet8.Clean.DTO.csproj" />
+  </ItemGroup>
+
 </Project>
