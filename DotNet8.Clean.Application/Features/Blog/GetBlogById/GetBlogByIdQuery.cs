@@ -1,5 +1,7 @@
 ﻿namespace DotNet8.Clean.Application.Features.Blog.GetBlogById;
 
+#region GetBlogByIdQuery
+
 public class GetBlogByIdQuery : IRequest<Result<BlogModel>>
 {
 	public int BlogId { get; set; }
@@ -9,3 +11,5 @@ public class GetBlogByIdQuery : IRequest<Result<BlogModel>>
 		BlogId = blogId;
 	}
 }
+
+#endregion
