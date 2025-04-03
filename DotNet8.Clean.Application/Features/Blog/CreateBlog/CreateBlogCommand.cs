@@ -1,5 +1,7 @@
 ﻿namespace DotNet8.Clean.Application.Features.Blog.CreateBlog;
 
+#region CreateBlogCommand
+
 public class CreateBlogCommand : IRequest<Result<BlogModel>>
 {
 	public BlogRequestModel requestModel;
@@ -9,3 +11,5 @@ public class CreateBlogCommand : IRequest<Result<BlogModel>>
 		this.requestModel = requestModel;
 	}
 }
+
+#endregion
