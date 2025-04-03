@@ -1,6 +1,4 @@
-﻿using DotNet8.Clean.Utlis.Resources;
-
-namespace DotNet8.Clean.Application.Features.Blog.GetBlogList;
+﻿namespace DotNet8.Clean.Application.Features.Blog.GetBlogList;
 
 public class GetBlogListQueryHandler : IRequestHandler<GetBlogListQuery, Result<BlogListModelV1>>
 {
