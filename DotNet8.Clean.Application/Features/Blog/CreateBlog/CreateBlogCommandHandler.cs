@@ -1,12 +1,6 @@
-﻿using DotNet8.Clean.Domain.Features.Blog;
-using DotNet8.Clean.DTO.Features.Blog;
-using DotNet8.Clean.Shared;
-using DotNet8.Clean.Utlis;
-using MediatR;
+﻿namespace DotNet8.Clean.Application.Features.Blog.CreateBlog;
 
-namespace DotNet8.Clean.Application.Features.Blog.CreateBlog;
-
-public class CreateBlogCommandHandler : IRequestHandler<CreateBlogCommand, Result<BlogModel>
+public class CreateBlogCommandHandler : IRequestHandler<CreateBlogCommand, Result<BlogModel>>
 {
 	private readonly IBlogRepository _blogRepository;
 
