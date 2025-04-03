@@ -5,3 +5,4 @@ global using DotNet8.Clean.Shared;
 global using DotNet8.Clean.Utlis;
 global using MediatR;
 global using DotNet8.Clean.Utlis.Resources;
+global using DotNet8.Clean.Application.Features.Blog.GetBlogList;
