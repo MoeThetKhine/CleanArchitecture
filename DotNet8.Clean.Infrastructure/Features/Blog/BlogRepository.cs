@@ -1,6 +1,4 @@
-﻿using DotNet8.Clean.DTO.Features.Blog;
-using DotNet8.Clean.Utlis;
-
+﻿
 namespace DotNet8.Clean.Infrastructure.Features.Blog;
 
 public class BlogRepository : IBlogRepository
