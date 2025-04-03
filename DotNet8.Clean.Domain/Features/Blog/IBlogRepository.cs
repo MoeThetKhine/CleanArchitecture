@@ -6,4 +6,5 @@ public interface IBlogRepository
 	Task<Result<BlogModel>> GetBlogByIdAsync(int id, CancellationToken cancellationToken);
 	Task<Result<BlogModel>> CreateBlogAsync(BlogRequestModel blogRequest, CancellationToken cancellationToken);
 	Task<Result<BlogModel>> UpdateBlogAsync(int id, BlogRequestModel blogRequest, CancellationToken cancellationToken);
+	Task<Result<BlogModel>> PatchBlogAsync(BlogRequestModel requestModel, int id, CancellationToken cancellationToken);
 }
