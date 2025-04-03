@@ -1,6 +1,4 @@
-﻿using DotNet8.Clean.DTO.Features.PageSetting;
-using DotNet8.Clean.Shared;
-
+﻿
 namespace DotNet8.Clean.Infrastructure.Features.Blog;
 
 public class BlogRepository : IBlogRepository
