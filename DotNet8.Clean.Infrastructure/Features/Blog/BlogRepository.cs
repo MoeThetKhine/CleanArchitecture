@@ -158,4 +158,46 @@ public class BlogRepository : IBlogRepository
 	}
 
 	#endregion
+
+	public async Task<Result<BlogModel>> PatchBlogAsync(BlogRequestModel requestModel, int id, CancellationToken cancellationToken)
+	{
+		Result<BlogModel> result;
+
+		try
+		{
+			var blog = await _context.Tbl_Blogs.FindAsync([id, cancellationToken], cancellationToken: cancellationToken);
+
+
+			if (blog is null)
+			{
+				result = Result<BlogModel>.NotFound();
+				goto result;
+			}
+
+			if (!requestModel.BlogTitle.IsNullOrEmpty())
+			{
+				blog.BlogTitle = requestModel.BlogTitle;
+			}
+			if (!requestModel.BlogAuthor.IsNullOrEmpty())
+			{
+				blog.BlogAuthor = requestModel.BlogAuthor;
+			}
+			if (!requestModel.BlogContent.IsNullOrEmpty())
+			{
+				blog.BlogContent = requestModel.BlogContent;
+			}
+
+			_context.Tbl_Blogs.Update(blog);
+			await _context.SaveChangesAsync(cancellationToken);
+			result = Result<BlogModel>.UpdateSuccess();
+
+		}
+		catch (Exception ex)
+		{
+			result = Result<BlogModel>.Failure(ex);
+		}
+
+	result:
+		return result;
+	}
 }
