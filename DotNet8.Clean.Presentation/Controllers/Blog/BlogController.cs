@@ -46,6 +46,8 @@ public class BlogController : BaseController
 
 	#endregion
 
+	#region CreateBlogAsync
+
 	[HttpPost]
 	public async Task<IActionResult> CreateBlogAsync([FromBody] BlogRequestModel requestModel, CancellationToken cancellationToken)
 	{
@@ -54,6 +56,8 @@ public class BlogController : BaseController
 
 		return Content(result);
 	}
+
+	#endregion
 
 	[HttpPut("{id}")]
 	public async Task<IActionResult> UpdateBlogAsync([FromBody] BlogRequestModel requestModel, int id, CancellationToken cancellationToken)
