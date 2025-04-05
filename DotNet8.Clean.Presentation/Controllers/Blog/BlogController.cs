@@ -20,6 +20,8 @@ public class BlogController : BaseController
 		_mediator = mediator;
 	}
 
+	#region GetBlogAsync
+
 	[HttpGet]
 	public async Task<IActionResult> GetBlogAsync(int pageNo, int  pageSize, CancellationToken cancellationToken)
 	{
@@ -28,6 +30,8 @@ public class BlogController : BaseController
 
 		return Content(result);
 	}
+
+	#endregion
 
 	[HttpGet("{id}")]
 	public async Task<IActionResult> GetBlogByIdAsync(int id, CancellationToken cancellationToken)
