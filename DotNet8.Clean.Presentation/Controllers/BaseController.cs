@@ -1,6 +1,4 @@
-﻿using DotNet8.Clean.Shared;
-using Microsoft.AspNetCore.Mvc;
-
+﻿
 namespace DotNet8.Clean.Presentation.Controllers;
 
 [Route("api/[controller]")]
