@@ -1,5 +1,4 @@
-﻿
-namespace DotNet8.Clean.Presentation.Controllers;
+﻿namespace DotNet8.Clean.Presentation.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
