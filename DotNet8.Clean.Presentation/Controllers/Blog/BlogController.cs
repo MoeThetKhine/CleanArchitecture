@@ -1,6 +1,5 @@
 ﻿using DotNet8.Clean.Application.Features.Blog.GetBlogList;
 using MediatR;
-using Microsoft.AspNetCore.Mvc;
 
 namespace DotNet8.Clean.Presentation.Controllers.Blog;
 
